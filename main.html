@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="main-body">
+        <div class="main-screen">
+            <span id="type">0</span>
+        </div>
+
+        <div class="keypad">
+            <div class="grid-container">
+                <div class="grid-item grid-item1" onclick="func1()">1</div>
+                <div class="grid-item grid-item2" onclick="func2()">2</div>
+                <div class="grid-item grid-item3" onclick="func3()">3</div>
+                <div class="grid-item grid-item-plus" onclick="func_plus()">+</div>
+                <div class="grid-item grid-item4" onclick="func4()">4</div>
+                <div class="grid-item grid-item5" onclick="func5()">5</div>
+                <div class="grid-item grid-item6" onclick="func6()">6</div>
+                <div class="grid-item grid-item-minus" onclick="func_minus()">-</div>
+                <div class="grid-item grid-item7" onclick="func7()">7</div>
+                <div class="grid-item grid-item8" onclick="func8()">8</div>
+                <div class="grid-item grid-item9" onclick="func9()">9</div>
+                <div class="grid-item grid-item-mul" onclick="func_mul()">*</div>
+                <div class="grid-item grid-item-ac" onclick="func_ac()">AC</div>
+                <div class="grid-item grid-item0" onclick="func0()">0</div>
+                <div class="grid-item grid-item-equal" onclick="func_equal()">=</div>
+                <div class="grid-item grid-item-div" onclick="func_div()">/</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
