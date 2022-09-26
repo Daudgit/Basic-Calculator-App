@@ -373,7 +373,20 @@ const func_equal = () =>{
     while(arr.length > 1)
     {
         // here we are performing the operation based on the operators preceedence
-        // order is  "/" -> "*" -> "+" -> "-";
+        // order is  "*" -> "/" -> "+" -> "-";
+        
+        while(arr.includes("*"))
+        {
+            const t = arr.indexOf("*")
+
+            let temp1 = arr[t-1];
+            let temp2 = arr[t+1];
+
+            let ans = temp1*temp2;
+            arr.splice(t-1,3,ans);
+        }
+        
+        
         while(arr.includes("/"))
         {
             const t = arr.indexOf("/")
@@ -386,16 +399,7 @@ const func_equal = () =>{
         }
 
 
-        while(arr.includes("*"))
-        {
-            const t = arr.indexOf("*")
-
-            let temp1 = arr[t-1];
-            let temp2 = arr[t+1];
-
-            let ans = temp1*temp2;
-            arr.splice(t-1,3,ans);
-        }
+        
 
 
         while(arr.includes("+"))
